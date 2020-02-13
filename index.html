@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Template</title>
+	<link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+	<script src="src/index.js"></script>
+    <script src="src/bxhlib.js"></script>
+</head>
+<body>
+    <section id="project">
+        <h1>SAND PIANO</h1>
+        <section id="controls">
+            <label>Material:</label>
+                <input type="radio" name="material" class="material" value="sand" checked> Sand
+                <input type="radio" name="material" class="material" value="water"> Water
+                <input type="radio" name="material" class="material" value="wall"> Wall
+                <input type="radio" name="material" class="material" value="eraser"> Eraser
+            <br>
+            <label>Size (clears screen):</label>
+                <input type="radio" name="size" class="size" value="20"> 20
+                <input type="radio" name="size" class="size" value="30"> 30
+                <input type="radio" name="size" class="size" value="40" checked> 40
+                <input type="radio" name="size" class="size" value="50"> 50
+        </section>
+        <canvas width="1024" height="768">
+            Get a real browser!
+            <!-- The user will only see the above text if their browser is older and doesn't support <canvas> -->
+        </canvas>
+        <br>
+        <button type="button" id="clear">Clear</button>
+        <div id="fontLoader">     
+            <p id="gloria">Gloria Font</p>
+        </div>
+    </section>
+    <section id="instructions">
+        <h2>How to use!</h2>
+        <p>The game is a <a href="https://en.wikipedia.org/wiki/Falling-sand_game">falling sand game</a>, with an added element of audio. Drop sand onto the piano to play notes. Use walls to manipulate the sand and "programmatically" generate music.</p>
+        <p>You can switch materials with the selector at the top, as well as change the grain size. You can clear the screen by either clicking the "clear" button or changing the grain size.</p>
+        <p>Future features: Water, which doesn't stack like sand does, and different instruments to play.</p>
+    </section>
+    <section id="audio">
+        <audio controls id="c" class="piano">
+            <source src="audio/C.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <audio controls id="d" class="piano">
+            <source src="audio/D.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <audio controls id="e" class="piano">
+            <source src="audio/E.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <audio controls id="f" class="piano">
+            <source src="audio/F.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <audio controls id="g" class="piano">
+            <source src="audio/G.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <audio controls id="a" class="piano">
+            <source src="audio/A.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <audio controls id="b" class="piano">
+            <source src="audio/B.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <audio controls id="c2" class="piano">
+            <source src="audio/C2.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+</body>
+</html>

@@ -1,0 +1,39 @@
+canvas{
+    border:1px solid black;
+}
+
+#fontLoader{     
+    height: 0;     
+    width: 0;     
+    overflow: hidden;   
+}    
+
+*{
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: lightgray;
+}
+
+#project{
+    text-align: center;
+}
+
+h1{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#controls{
+    margin-bottom: 10px;
+}
+
+audio{
+    visibility: hidden;
+}
+
+button{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#instructions{
+   text-align: center;
+}
